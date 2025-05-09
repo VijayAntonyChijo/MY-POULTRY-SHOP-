@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MY SHOP</title>
+        <link rel="stylesheet" href="shop.css"> <!-- Link to CSS file -->
+    </head>
+    <body>
+        <header>
+            <h1>WELCOME TO MY POULTRY SHOP</h1>
+        </header>
+        <section class="catalog">
+            <h2>SHOP CATALOG</h2>
+            <h4>Leg - 2 - Each 250G</h4>
+            <h4>Wings - 2 Each 250G</h4>
+            <h4>Flesh - 1 - 1KG</h4>
+        </section>
+        <main class="products-container">
+            <div class="product-card">
+                <img src="leg.jpg" alt="Chicken Leg">
+                <h2>Leg</h2>
+                <label for="legs">Enter No of Legs:</label>
+                <input type="number" id="legs" min="0" placeholder="">
+            </div>
+        
+            <div class="product-card">
+                <img src="wings.jpg" alt="Chicken Wings">
+                <h2>Wings</h2>
+                <label for="wings">Enter No Of Wings:</label>
+                <input type="number" id="wings" min="0" placeholder="">           
+            </div>
+        
+            <div class="product-card">
+                <img src="flesh.jpg" alt="Chicken Flesh">
+                <h2>Flesh</h2>
+                <label for="flesh">Enter KG OF Flesh (kg):</label>
+                <input type="number" id="flesh" min="0" step="0.1" placeholder="">            
+            </div>
+            <button onclick="calculate()">Calculate</button>
+  
+            <h2>Results:</h2>
+            <p id="results"></p>
+        </main>
+        <script src="shop.js"></script>
+    </body>
+</html>
